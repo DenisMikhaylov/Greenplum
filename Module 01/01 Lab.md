@@ -56,6 +56,7 @@ apt install -y \
   openssl libapr1 libaprutil1 libcurl4 libevent-2.1-7 libxml2 libyaml-0-2 \
   libopenldap2-2.6 libreadline8 libzstd1 zlib1g perl python3 rsync sed tar which zip \
   locales xfsprogs
+wget https://github.com/greenplum-db/gpdb/releases/download/6.24.0/greenplum-db-6.24.0-ubuntu18.04-amd64.deb
 ```
 
 > **Если `libopenldap2-2.6` недоступен в Debian 12**, проверьте доступные версии: `apt-cache search libopenldap`. Имя пакета может отличаться (например, `libldap-2.5-0`); DEB-пакет Greenplum может требовать конкретную версию, и при несовпадении потребуется либо симлинк, либо сборка из исходников.
